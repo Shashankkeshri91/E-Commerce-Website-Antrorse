@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+
+    <h1>Your Shopping Cart</h1>
+
+    <!-- Display the cart items here -->
+    <div id="cart-items"></div>
+
+    <!-- Add customer details and checkout button -->
+    <div id="customer-details-container">
+        <h2>Customer Details</h2>
+        <!-- Add customer details form here -->
+        <form id="customer-details-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Display total and checkout button -->
+        <div id="checkout-details">
+            <h3>Total: <span id="total-amount">$0.00</span></h3>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+
+</html>
